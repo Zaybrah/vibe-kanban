@@ -89,7 +89,7 @@ services:
 
       SERVER_DATABASE_URL: postgres://remote:remote@remote-db:5432/remote
       SERVER_LISTEN_ADDR: 0.0.0.0:8081
-      ELECTRIC_URL: http://electric:3000
+      ELECTRIC_URL: http://electric:16854
       # OAuth — configure at least one provider (GitHub or Google)
       GITHUB_OAUTH_CLIENT_ID: ${GITHUB_OAUTH_CLIENT_ID:-}
       GITHUB_OAUTH_CLIENT_SECRET: ${GITHUB_OAUTH_CLIENT_SECRET:-}
@@ -98,9 +98,9 @@ services:
       VIBEKANBAN_REMOTE_JWT_SECRET: ${VIBEKANBAN_REMOTE_JWT_SECRET:?set in .env.remote}
       # Optional — leave empty to disable invitation emails
       LOOPS_EMAIL_API_KEY: ${LOOPS_EMAIL_API_KEY:-}
-      SERVER_PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-http://localhost:3000}
-      VITE_APP_BASE_URL: ${PUBLIC_BASE_URL:-http://localhost:3000}
-      VITE_API_BASE_URL: ${PUBLIC_BASE_URL:-http://localhost:3000}
+      SERVER_PUBLIC_BASE_URL: ${SERVER_PUBLIC_BASE_URL}
+      VITE_APP_BASE_URL: http://localhost:16854
+      VITE_API_BASE_URL: http://localhost:16854
       ELECTRIC_ROLE_PASSWORD: ${ELECTRIC_ROLE_PASSWORD:-remote}
       R2_ACCESS_KEY_ID: ${R2_ACCESS_KEY_ID:-}
       R2_SECRET_ACCESS_KEY: ${R2_SECRET_ACCESS_KEY:-}
