@@ -97,8 +97,8 @@ services:
       # Optional — leave empty to disable invitation emails
       LOOPS_EMAIL_API_KEY: ${LOOPS_EMAIL_API_KEY:-}
       SERVER_PUBLIC_BASE_URL: ${SERVER_PUBLIC_BASE_URL}
-      VITE_APP_BASE_URL: http://localhost:16854
-      VITE_API_BASE_URL: http://localhost:16854
+      VITE_APP_BASE_URL: ${SERVER_PUBLIC_BASE_URL}
+      VITE_API_BASE_URL: ${SERVER_PUBLIC_BASE_URL}
       ELECTRIC_ROLE_PASSWORD: ${ELECTRIC_ROLE_PASSWORD:-remote}
       R2_ACCESS_KEY_ID: ${R2_ACCESS_KEY_ID:-}
       R2_SECRET_ACCESS_KEY: ${R2_SECRET_ACCESS_KEY:-}
