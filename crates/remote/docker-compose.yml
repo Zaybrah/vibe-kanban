@@ -87,7 +87,7 @@ services:
 
       SERVER_DATABASE_URL: postgres://remote:remote@remote-db:5432/remote
       SERVER_LISTEN_ADDR: 0.0.0.0:8081
-      ELECTRIC_URL: http://electric:16854
+      ELECTRIC_URL: http://electric:8081
       # OAuth — configure at least one provider (GitHub or Google)
       GITHUB_OAUTH_CLIENT_ID: ${GITHUB_OAUTH_CLIENT_ID:-}
       GITHUB_OAUTH_CLIENT_SECRET: ${GITHUB_OAUTH_CLIENT_SECRET:-}
